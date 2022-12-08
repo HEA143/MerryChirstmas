@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merry Christmas & Happy New Year!</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    *{
+        font-family: 'Gowun Dodum', sans-serif;
+    }
+    body {
+      background-color: #9b070f;
+    }
+    .envelope {
+      width: 200px;
+      height: 124px;
+
+      background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG100757.png);
+      background-size: cover;
+      background-position: center;
+
+      margin: 450px auto 0px auto;
+      cursor: pointer;
+    }
+    .gif {
+      background-color: white;
+
+      width: 200px;
+      height: 200px;
+
+      background-image: url(https://i.pinimg.com/originals/91/e2/16/91e21621d07ade9f8ef73b2c5e9205a6.gif);
+      background-size: cover;
+      background-position: center;
+      border-radius: 100px;
+
+      margin: 100px auto 0px auto;
+      border: 5px solid white;
+      box-shadow: 0px 0px 10px 0px;
+    }
+    h1 {
+      color: white;
+      text-align: center;
+      margin: 30px;
+    }
+    h2 {
+        color: white;
+      text-align: center;
+      margin: 30px;
+    }
+    .letter-open {
+        display: none;
+    }
+    .messagebox {
+      background-color: wheat;
+
+      width: 400px;
+      margin: auto;
+
+      color: brown;
+
+      padding: 30px;
+
+      font-size: 20px;
+      line-height: 30px;
+      box-shadow: 0px 0px 10px 0px white;
+    }
+    .from {
+      text-align: right;
+      margin-bottom: 0px;
+    }
+    @media screen and (max-width: 760px) {
+        .messagebox {
+            width: 300px;
+            padding: 20px;
+        }
+
+        .rtan {
+            width: 150px;
+            height: 150px;
+            margin: 70px auto 0px auto;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .envelope {
+            margin: 150px auto 0px auto;
+        }
+    }
+
+  </style>
+  </head>
+  <body>
+    <div class="letter-close">
+      <div class="envelope" onclick = "open_letter()"></div>
+      <h2 class ="envelope-msg">ෆ편지 도착ෆ</h2>
+    </div>
+    <div class="letter-open">
+      <div class="gif" onclick = "go_gif()"></div>
+      <h1>2022년도 고마웠어!</h1>
+      <div class="messagebox">
+        짝꿍에게.<br />
+        2022년의 희노애락도 함께 해줘서 고마웠어.<br />
+        다가오는 2023년에도 함께하는 행복으로 채워가자<br />
+        같이 사는 한 말썽없이 평화롭게 살자<br />
+        Merry Christmas & Happy New Year
+        <p class="from">from 안사람</p>
+      </div>
+    </div>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <script>        
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = "none";
+            document.getElementsByClassName("letter-open")[0].style.display = "block";
+        };
+        function go_gif() {
+            alert('앗, 어떻게 찾았지!');
+            window.location.href = 'https://pbs.twimg.com/media/EdhVQ_PU0AAIwKP.jpg'
+        };    
+    </script>
+  </body>
+</html>

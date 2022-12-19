@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Merry Christmas & Happy New Year!</title>
+    <title>Goodbye 2022, Hello 2023!</title>
     <link
       rel="shortcut icon"
-      href="https://pngimg.com/uploads/heart/heart_PNG51134.png"
+      href="https://pngimg.com/uploads/star/star_PNG41513.png"
     />
+    <link rel="stylesheet" href="style.css" />
     <meta
       property="og:image"
-      content="https://i.pinimg.com/564x/af/a6/18/afa61890f975e746168d5a4353905ce8.jpg"
+      content="https://i.pinimg.com/564x/ca/b0/de/cab0debb367de21daf714d45df4587dd.jpg"
     />
-    <meta property="og:title" content="♥" />
+    <meta property="og:title" content="★" />
     <meta property="og:description" content="MerryChristmas" />
 
-    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <script src="PureSnow.js"></script>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
@@ -29,11 +30,11 @@
         width: 200px;
         height: 200px;
 
-        background-image: url(present1.png);
+        background-image: url(present2.png);
         background-size: cover;
         background-position: center;
 
-        margin: 250px auto 0px auto;
+        margin: 0 auto;
         cursor: pointer;
       }
       .gif {
@@ -42,12 +43,12 @@
         width: 200px;
         height: 200px;
 
-        background-image: url(https://i.pinimg.com/originals/c3/67/75/c36775f1f49e5e09aff8bace035e268d.gif);
+        background-image: url(https://i.pinimg.com/originals/38/4f/c8/384fc8cea062249d53c313e1fcf876cf.gif);
         background-size: cover;
         background-position: center;
         border-radius: 100px;
 
-        margin: 100px auto 0px auto;
+        margin: 0 auto;
         border: 5px solid white;
         box-shadow: 0px 0px 10px 0px;
       }
@@ -59,9 +60,13 @@
       h2 {
         color: white;
         text-align: center;
-        margin: 30px;
+        margin: 0px;
+      }
+      .letter-close {
+        padding-top: 300px;
       }
       .letter-open {
+        padding-top: 100px;
         display: none;
       }
       .messagebox {
@@ -89,42 +94,47 @@
           padding: 20px;
         }
 
-        .rtan {
+        .gif {
           width: 150px;
           height: 150px;
-          margin: 70px auto 0px auto;
+        }
+
+        .letter-open {
+          padding-top: 70px;
         }
 
         h1 {
           font-size: 28px;
         }
 
-        .envelope {
-          margin: 200px auto 0px auto;
+        .letter-close {
+          padding-top: 150px;
         }
       }
     </style>
   </head>
   <body>
+    <div id="snow"></div>
     <div class="letter-close">
       <div class="envelope" onclick="open_letter()"></div>
-      <h2 class="envelope-msg">♥ 선물 도착 ♥</h2>
+      <h2 class="envelope-msg">Merry Christmas<br>Dear My Friends</h2>
     </div>
     <div class="letter-open">
       <div class="gif" onclick="go_gif()"></div>
-      <h1>나의 행복, 나의 자랑</h1>
+      <h1>2022년도 고마웠어!</h1>
       <div class="messagebox">
-        <b>나의 사랑 유현씨에게ෆ</b><br />
-        올 한 해도 나의 희노애락을 함께 해줘서 고마워요.
-         오는 2023년에도 우리 함께하는 기쁨으로 채워가요.<br />
-        항상 고맙고, 미안하고, 사랑해요♥<br />
+        <b>나의 친구들에게.</b><br/>
+        2022년의 나와 희노애락을 함께 해줘서,
+        늘 아무말 없이 느린 나를 기다려줘서 고마워.<br/>
+        2023년에도 우리 뚝딱뚝딱 얼레벌레 같이 가자!<br/>
+        완벽하지 않아도 즐겁게 살자!<br/>
         Merry Christmas
-        <p class="from">from 세영ෆ</p>
+        <p class="from">from 세옹♥</p>
       </div>
     </div>
     <audio
       id="player"
-      src="https://cdn.pixabay.com/download/audio/2022/11/05/audio_d67cbc05f4.mp3?filename=happy-christmas-winter-holiday-and-magical-fairy-tale-125099.mp3"
+      src="https://cdn.pixabay.com/download/audio/2022/11/12/audio_9376c97e06.mp3?filename=christmas-vacation-christmas-eve-and-new-year-fairy-tale-125673.mp3"
     ></audio>
     <script>
       function open_letter() {
@@ -135,9 +145,9 @@
           "block";
       }
       function go_gif() {
-        alert("앗, 어떻게 찾았지!");
+        alert("앗, 어떻게 알았지!");
         window.location.href =
-          "https://pbs.twimg.com/media/EdhVQ_PU0AAIwKP.jpg";
+          "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150725_235%2Fpick15_14378039891825MRII_JPEG%2FiPhone_22.jpg&type=sc960_832";
       }
     </script>
   </body>

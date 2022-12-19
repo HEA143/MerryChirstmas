@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Merry Christmas & Happy New Year!</title>
+    <title>love you, Mom</title>
     <link
       rel="shortcut icon"
-      href="https://pngimg.com/uploads/heart/heart_PNG51134.png"
+      href="https://pngimg.com/uploads/heart/heart_PNG51127.png"
     />
+    <link rel="stylesheet" href="style.css" />
     <meta
       property="og:image"
-      content="https://i.pinimg.com/564x/af/a6/18/afa61890f975e746168d5a4353905ce8.jpg"
+      content="https://i.pinimg.com/564x/d7/fb/3e/d7fb3e37337a013cc095358814a4b027.jpg"
     />
-    <meta property="og:title" content="♥" />
-    <meta property="og:description" content="MerryChristmas" />
+    <meta property="og:title" content="MerryChristmas" />
+    <meta property="og:description" content="이리오슈, 냉큼오슈" />
 
-    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <script src="PureSnow.js"></script>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
@@ -29,11 +30,11 @@
         width: 200px;
         height: 200px;
 
-        background-image: url(present1.png);
+        background-image: url(present3.png);
         background-size: cover;
         background-position: center;
 
-        margin: 250px auto 0px auto;
+        margin: 0 auto;
         cursor: pointer;
       }
       .gif {
@@ -42,12 +43,12 @@
         width: 200px;
         height: 200px;
 
-        background-image: url(https://i.pinimg.com/originals/c3/67/75/c36775f1f49e5e09aff8bace035e268d.gif);
+        background-image: url(https://i.pinimg.com/originals/8b/25/8d/8b258daa8f65d773319c34e40990a3a3.gif);
         background-size: cover;
         background-position: center;
         border-radius: 100px;
 
-        margin: 100px auto 0px auto;
+        margin: 0 auto;
         border: 5px solid white;
         box-shadow: 0px 0px 10px 0px;
       }
@@ -59,9 +60,13 @@
       h2 {
         color: white;
         text-align: center;
-        margin: 30px;
+        margin: 0px;
+      }
+      .letter-close {
+        padding-top: 300px;
       }
       .letter-open {
+        padding-top: 100px;
         display: none;
       }
       .messagebox {
@@ -89,42 +94,47 @@
           padding: 20px;
         }
 
-        .rtan {
+        .gif {
           width: 150px;
           height: 150px;
-          margin: 70px auto 0px auto;
+        }
+
+        .letter-open {
+          padding-top: 70px;
         }
 
         h1 {
           font-size: 28px;
         }
 
-        .envelope {
-          margin: 200px auto 0px auto;
+        .letter-close {
+          padding-top: 150px;
         }
       }
     </style>
   </head>
   <body>
+    <div id="snow"></div>
     <div class="letter-close">
       <div class="envelope" onclick="open_letter()"></div>
-      <h2 class="envelope-msg">♥ 선물 도착 ♥</h2>
+      <h2 class="envelope-msg">Merry Christmas<br>Dear My Mom♥</h2>
     </div>
     <div class="letter-open">
       <div class="gif" onclick="go_gif()"></div>
-      <h1>나의 행복, 나의 자랑</h1>
+      <h1>2023년도 행복하자!</h1>
       <div class="messagebox">
-        <b>나의 사랑 유현씨에게ෆ</b><br />
-        올 한 해도 나의 희노애락을 함께 해줘서 고마워요.
-         오는 2023년에도 우리 함께하는 기쁨으로 채워가요.<br />
-        항상 고맙고, 미안하고, 사랑해요♥<br />
+        <b>지원씨께.</b><br />
+        어느새 2022년의 끝자락에 왔네.<br />
+        엄마에게 올 한해가 어떤 해로 기억될지 모르지만,
+         새해에는 행복으로 한 걸음 더 가까이 가자!<br />
+        엄마 항상 미안하고, 고맙고, 사랑해♥ <br />
         Merry Christmas
-        <p class="from">from 세영ෆ</p>
+        <p class="from">엄마 딸 세영 올림</p>
       </div>
     </div>
     <audio
       id="player"
-      src="https://cdn.pixabay.com/download/audio/2022/11/05/audio_d67cbc05f4.mp3?filename=happy-christmas-winter-holiday-and-magical-fairy-tale-125099.mp3"
+      src="https://cdn.pixabay.com/download/audio/2022/07/11/audio_96300a23ea.mp3?filename=christmas-jazz-114753.mp3"
     ></audio>
     <script>
       function open_letter() {
@@ -137,7 +147,7 @@
       function go_gif() {
         alert("앗, 어떻게 찾았지!");
         window.location.href =
-          "https://pbs.twimg.com/media/EdhVQ_PU0AAIwKP.jpg";
+          "https://pbs.twimg.com/media/FGayRGQVEAMriIN?format=jpg&name=large";
       }
     </script>
   </body>

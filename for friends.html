@@ -8,7 +8,6 @@
       rel="shortcut icon"
       href="https://pngimg.com/uploads/star/star_PNG41513.png"
     />
-    <link rel="stylesheet" href="style.css" />
     <meta
       property="og:image"
       content="https://i.pinimg.com/564x/ca/b0/de/cab0debb367de21daf714d45df4587dd.jpg"
@@ -16,7 +15,7 @@
     <meta property="og:title" content="★" />
     <meta property="og:description" content="MerryChristmas" />
 
-    <script src="PureSnow.js"></script>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
@@ -34,7 +33,7 @@
         background-size: cover;
         background-position: center;
 
-        margin: 0 auto;
+        margin: 250px auto 0px auto;
         cursor: pointer;
       }
       .gif {
@@ -48,7 +47,7 @@
         background-position: center;
         border-radius: 100px;
 
-        margin: 0 auto;
+        margin: 100px auto 0px auto;
         border: 5px solid white;
         box-shadow: 0px 0px 10px 0px;
       }
@@ -62,11 +61,7 @@
         text-align: center;
         margin: 0px;
       }
-      .letter-close {
-        padding-top: 300px;
-      }
       .letter-open {
-        padding-top: 100px;
         display: none;
       }
       .messagebox {
@@ -97,24 +92,20 @@
         .gif {
           width: 150px;
           height: 150px;
-        }
-
-        .letter-open {
-          padding-top: 70px;
+          margin: 70px auto 0px auto;
         }
 
         h1 {
           font-size: 28px;
         }
 
-        .letter-close {
-          padding-top: 150px;
+        .envelope {
+          margin: 200px auto 0px auto;
         }
       }
     </style>
   </head>
   <body>
-    <div id="snow"></div>
     <div class="letter-close">
       <div class="envelope" onclick="open_letter()"></div>
       <h2 class="envelope-msg">Merry Christmas<br>Dear My Friends</h2>
@@ -134,7 +125,7 @@
     </div>
     <audio
       id="player"
-      src="https://cdn.pixabay.com/download/audio/2022/11/12/audio_9376c97e06.mp3?filename=christmas-vacation-christmas-eve-and-new-year-fairy-tale-125673.mp3"
+      src="https://cdn.pixabay.com/download/audio/2022/11/05/audio_d67cbc05f4.mp3?filename=happy-christmas-winter-holiday-and-magical-fairy-tale-125099.mp3"
     ></audio>
     <script>
       function open_letter() {
